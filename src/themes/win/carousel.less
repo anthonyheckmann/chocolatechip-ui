@@ -1,0 +1,60 @@
+/* ============================== 
+   Carousel styles
+   =========================== */
+.carousel { 
+  margin:0 auto;
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  -ms-touch-action: pan-y;
+  
+  & > ul {
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+
+    & > li {
+      float:left;
+      width:100%;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: -ms-flexbox;
+      display: flex;    
+      -ms-align-items: stretch;
+      align-items: stretch;
+      -ms-flex-pack: center;
+      justify-content: center; 
+    }
+  }
+}
+
+ul.pagination {
+  list-style: disc;
+  margin: 10px auto;
+  padding: 0;
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-flex-pack: justify;
+  display: flex;
+  flex-direciton: row;
+  justify-content: space-around;
+
+  & > li {
+    list-style: disc;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    cursor: pointer; 
+
+    &.selected {
+      background-color: @appTint; 
+    }  
+  }
+}

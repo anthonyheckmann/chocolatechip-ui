@@ -108,7 +108,8 @@ gulp.task('js', function () {
     'src/chui/scroll.js', 
     'src/chui/tabbar.js', 
     'src/chui/templates.js', 
-    'src/chui/search.js'
+    'src/chui/search.js', 
+    'src/chui/carousel.js'
 	])
 	  .pipe(concat("chui-" + pkg.version + ".js"))
 	  .pipe(replace(/\(function\(\$\) {\n^.*\'use strict\';/img, ''))
