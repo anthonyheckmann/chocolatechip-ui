@@ -7,6 +7,7 @@
   /* 
   var options = {
     loop: true,
+    pagination: true,
     preventPageScroll: true,
     callback: function(index, element) {}
   } 
